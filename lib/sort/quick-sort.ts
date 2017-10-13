@@ -9,7 +9,8 @@ export class QuickSort {
     public sort(): Array<number> {
 
         if (!this.sortArray) {
-            return [];
+            this.sortArray = [];
+            return this.sortArray;
         } else if (this.sortArray.length < 2) {
             return this.sortArray;
         }

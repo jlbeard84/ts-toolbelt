@@ -23,4 +23,40 @@ describe("Quick Sort", () => {
         
         expect(testArray[testArray.length - 1]).to.equal(10);
     });
+
+    it("should handle a null array", () => {
+        
+        const testArray = null;
+
+        const quickSort = new QuickSort(testArray);
+
+        const result = quickSort.sort();
+
+        expect(result).to.not.null;
+        expect(result.length).to.equal(0);
+    });
+
+    it("should handle a 0 length array", () => {
+        
+        const testArray = [];
+
+        const quickSort = new QuickSort(testArray);
+
+        quickSort.sort();
+
+        expect(testArray).to.not.null;
+        expect(testArray.length).to.equal(0);
+    });
+
+    it("should handle a 1 length array", () => {
+        
+        const testArray = [5];
+
+        const quickSort = new QuickSort(testArray);
+
+        quickSort.sort();
+
+        expect(testArray.length).to.equal(1);
+        expect(testArray[0]).to.equal(5);
+    });
 });

@@ -1,0 +1,21 @@
+{
+  "name": "ts-toolbelt",
+  "version": "1.0.0",
+  "description": "Nifty features for Typescript development.",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "debug-test": "mocha -r --debug-brk ts-node/register test/**/*.spec.ts --no-timeouts"
+  },
+  "author": "Josh Beard",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0"
+  },
+  "dependencies": {
+    "typescript": "^2.5.3"
+  }
+}

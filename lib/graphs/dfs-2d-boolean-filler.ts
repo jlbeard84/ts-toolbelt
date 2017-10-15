@@ -12,9 +12,6 @@ export class Dfs2DBooleanFiller {
 
         this.xLength = this.boolArray.length;
         this.yLength = this.boolArray[0].length;
-
-        console.log(this.xLength);
-        console.log(this.yLength);
     }
 
     public fillCells(x: number = 0, y: number = 0): number {
